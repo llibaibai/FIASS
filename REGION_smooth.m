@@ -2,7 +2,7 @@ clc;
 clear all;
 
 % Parameter settings
-folderPath = 'C:\Users\18360\Desktop\example';
+folderPath = 'E:\your\path\here';
 regionSize = 50;      % Area size
 windowSize = 5;       % Smoothing window size
 
