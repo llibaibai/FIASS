@@ -2,7 +2,7 @@ clc;
 clear all;
 
 % Set the folder path
-folderPath = 'E:\QQQQQ\example';
+folderPath = 'E:\your\path\here';
 
 % Get the file information of all TIF files in the folder
 filePattern = fullfile(folderPath, '*.tif');
@@ -41,7 +41,7 @@ for i = 1:length(pngFiles)
     sortedIndex = sortedIndices(i);
     baseFileName = pngFiles(sortedIndex).name;
     fullFileName = fullfile(folderPath, baseFileName);
-    disp(['Processing files£º', fullFileName]);
+    disp(['Processing filesÂ£Âº', fullFileName]);
 
     % Read color images
     img = imread(fullFileName);
@@ -80,7 +80,7 @@ for i = 1:length(pngFiles)
     % **Save the color picture with the selection to the PICTURE folder**
     selectedRegionFile = fullfile(saveFolder, ['selected_', baseFileName(1:end-3), 'png']);
     imwrite(imgWithSquare, selectedRegionFile);
-    disp(['Image saved with selection£º', selectedRegionFile]);
+    disp(['Image saved with selectionÂ£Âº', selectedRegionFile]);
 
     % Convert to grayscale image for grayscale value calculation
     grayImg = rgb2gray(img);  
