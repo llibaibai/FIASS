@@ -40,9 +40,9 @@ General preparation
 2. Modify path parameters:
 - Open the script file, find the following line of code, and replace the path with your image folder path:
 * Sigletrangle_smooth.m:
-folderPath = 'E:\QQQQQ\example'; % Change to your path
+folderPath = 'E:\your\path\here'; % Change to your path
 * REGION_smooth.m:
-folderPath = 'C:\Users\18360\Desktop\example'; % Change to your path
+folderPath = 'E:\your\path\here'; % Change to your path
 
 Run Sigletrangle_smooth.m
 1. Parameter settings:
